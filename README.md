@@ -11,7 +11,7 @@
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/Mr-Don-Leo/42-libft/total) ![Contributors](https://img.shields.io/github/contributors/Mr-Don-Leo/42-libft?color=dark-green) ![Issues](https://img.shields.io/github/issues/Mr-Don-Leo/42-libft) 
+![Downloads](https://img.shields.io/github/downloads/Mr-Don-Leo/42-libft/total) 
 
 ## Table Of Contents
 
