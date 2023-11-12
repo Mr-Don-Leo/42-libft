@@ -1,22 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mbabayan <mbabayan@student.42abudhabi.a    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/10 17:42:31 by mbabayan          #+#    #+#             */
+/*   Updated: 2023/11/12 14:07:44 by mbabayan         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-    size_t index;
+	size_t	i;
 
-    index = 0;
-    if (!n)
-    {
-        return (0);
-    }
-    // same method as in strlcpy besides checking if both index's match, if they dont it breaks the loop and
-    // takes the index to the returrn value
-    while (s1[index] && index < n - 1 && s1[index] == s2[index])
-    {
-        index++;
-    }
-    // returned unsigned since ascii does not go negative
-    return ((unsigned char)s1[index] - (unsigned char)s2[index]);
+	i = 0;
+	if (!n)
+		return (0);
+	while (s1[i] && i < n - 1 && s1[i] == s2[i])
+		i++;
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-
-//compare two strings up to a specified number of characters or until a null terminator
