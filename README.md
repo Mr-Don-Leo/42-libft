@@ -11,8 +11,6 @@
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/Mr-Don-Leo/42-libft/total) 
-
 ## Table Of Contents
 
 * [About the Project](#about-the-project)
