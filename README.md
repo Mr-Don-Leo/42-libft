@@ -32,7 +32,7 @@ Here I will explain how to clone the repository and how to use it.
 1. Clone the repo
 
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/Mr-Don-Leo/42-libft.git
 ```
 
 ### Usage
