@@ -16,7 +16,7 @@
 * [About the Project](#about-the-project)
 * [Getting Started](#getting-started)
   * [Installation](#installation)
-* [Usage](#usage)
+  * [Usage](#usage)
 * [Functions](#functions-and-what-they-do)
 
 ## About The Project
@@ -35,7 +35,7 @@ Here I will explain how to clone the repository and how to use it.
 git clone https://github.com/your_username_/Project-Name.git
 ```
 
-## Usage
+### Usage
 
 Firstly, you change the directory into the libft file you closed. Then you run make: 
 ```sh
@@ -44,4 +44,4 @@ make
 ```
 Running this command will compile the libft library, generating a libft.a file. Subsequently, you can link this library to your C project files during compilation using either gcc or cc.
 
-### Functions and what they do
+## Functions and what they do
