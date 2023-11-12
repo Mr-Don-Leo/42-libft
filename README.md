@@ -17,8 +17,7 @@
 * [Getting Started](#getting-started)
   * [Installation](#installation)
 * [Usage](#usage)
-* [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
+* [Functions](#functions-and-what-they-do)
 
 ## About The Project
 
@@ -45,3 +44,4 @@ make
 ```
 Running this command will compile the libft library, generating a libft.a file. Subsequently, you can link this library to your C project files during compilation using either gcc or cc.
 
+### Functions and what they do
