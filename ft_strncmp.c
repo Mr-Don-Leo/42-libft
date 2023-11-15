@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbabayan <mbabayan@student.42abudhabi.a    +#+  +:+       +#+        */
+/*   By: mbabayan <mbabayan@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/10 17:42:31 by mbabayan          #+#    #+#             */
-/*   Updated: 2023/11/12 14:07:44 by mbabayan         ###   ########.fr       */
+/*   Created: 2023/11/08 17:20:54 by mbabayan          #+#    #+#             */
+/*   Updated: 2023/11/13 01:39:07 by mbabayan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

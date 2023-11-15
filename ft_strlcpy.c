@@ -3,9 +3,9 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbabayan <mbabayan@student.42abudhabi.a    +#+  +:+       +#+        */
+/*   By: mbabayan <mbabayan@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/05 11:44:00 by mbabayan          #+#    #+#             */
+/*   Created: 2023/11/04 14:19:54 by mbabayan          #+#    #+#             */
 /*   Updated: 2023/11/12 14:03:00 by mbabayan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */

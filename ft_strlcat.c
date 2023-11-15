@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbabayan <mbabayan@student.42abudhabi.a    +#+  +:+       +#+        */
+/*   By: mbabayan <mbabayan@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/05 11:44:09 by mbabayan          #+#    #+#             */
-/*   Updated: 2023/11/12 21:20:39 by mbabayan         ###   ########.fr       */
+/*   Created: 2023/11/04 15:37:41 by mbabayan          #+#    #+#             */
+/*   Updated: 2023/11/13 01:38:35 by mbabayan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
     size_t  srclen;
     size_t  index;
 
-    dstlen = strlen(dst);
-    srclen = strlen(src);
+    dstlen = ft_strlen(dst);
+    srclen = ft_strlen(src);
     if (dstlen >= dstsize)
         return (srclen + dstsize);
     index = 0;
