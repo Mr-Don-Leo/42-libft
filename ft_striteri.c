@@ -1,39 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbabayan <mbabayan@student.42abudhabi.ae>  +#+  +:+       +#+        */
+/*   By: mbabayan <mbabayan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/15 11:50:49 by mbabayan          #+#    #+#             */
-/*   Updated: 2023/11/15 11:50:53 by mbabayan         ###   ########.fr       */
+/*   Created: 2023/11/15 15:51:32 by mbabayan          #+#    #+#             */
+/*   Updated: 2023/11/15 15:59:48 by mbabayan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int word_count(char const *s, char c)
+void ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	int count;
 	int index;
 
-	count = 0;
 	index = 0;
-	while (s[index])
+	if (!s)
+		return;
+	while (index < ft_strlen(s))
 	{
-		if (s[index] != c)
-		{
-			count++;
-			while (s[index] != c && s[index])
-				index++;
-		}
-		else
-			index++;
+		(*f)(index, &s[index]);
+		index++;
 	}
-}
-
-char **ft_split(char const *s, char c)
-{
-	size_t index;
-
 }

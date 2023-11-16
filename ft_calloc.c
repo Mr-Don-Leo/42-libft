@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbabayan <mbabayan@student.42abudhabi.ae>  +#+  +:+       +#+        */
+/*   By: mbabayan <mbabayan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 18:30:17 by mbabayan          #+#    #+#             */
-/*   Updated: 2023/11/10 17:34:32 by mbabayan         ###   ########.fr       */
+/*   Updated: 2023/11/15 17:11:15 by mbabayan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
