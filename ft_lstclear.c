@@ -1,21 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbabayan <mbabayan@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 22:31:18 by mbabayan          #+#    #+#             */
-/*   Updated: 2023/11/13 01:40:02 by mbabayan         ###   ########.fr       */
+/*   Created: 2023/11/20 14:18:54 by mbabayan          #+#    #+#             */
+/*   Updated: 2023/11/20 14:19:00 by mbabayan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
- * Calling write function with file descriptor,
- */
-void ft_putchar_fd(char c, int fd)
+void ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	write(fd, &c, 1);
+	t_list *holder;
+
+	if (!*lst)
+		return ;
+	while (*lst)
+	{
+		holder = (*lst) -> next;
+		ft_lstdelone(*lst, del);
+		*lst = holder;
+	}
+	free(*lst);
 }

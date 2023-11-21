@@ -12,13 +12,14 @@
 
 #include "libft.h"
 
-void ft_striteri(char *s, void (*f)(unsigned int, char*))
+// ft_striteri applies the function 'f' to each character of the string 's'
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	int index;
+	int	index;
 
 	index = 0;
 	if (!s)
-		return;
+		return ;
 	while (index < ft_strlen(s))
 	{
 		(*f)(index, &s[index]);

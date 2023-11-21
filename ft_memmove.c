@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+ * function copies n bytes from memory area src to memory area dest.
+ * The memory areas may overlap, but copying is done in a non-destructive manner.
+ * Which is done in reverse order.
+ */
 void *ft_memmove(void *dest, const void *src, size_t n)
 {
     unsigned char *dest1;

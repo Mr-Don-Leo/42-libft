@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbabayan <mbabayan@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 22:31:18 by mbabayan          #+#    #+#             */
-/*   Updated: 2023/11/13 01:40:02 by mbabayan         ###   ########.fr       */
+/*   Created: 2023/11/19 15:13:40 by mbabayan          #+#    #+#             */
+/*   Updated: 2023/11/19 15:13:40 by mbabayan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * Calling write function with file descriptor,
+ * Counts the number of elements in a list.
  */
-void ft_putchar_fd(char c, int fd)
+int ft_lstsize(t_list *lst)
 {
-	write(fd, &c, 1);
+	int count;
+
+	count = 0;
+	while (lst)
+	{
+		lst = lst->next;
+		count++;
+	}
+	return (count);
 }

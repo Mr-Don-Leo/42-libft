@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbabayan <mbabayan@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 22:31:18 by mbabayan          #+#    #+#             */
-/*   Updated: 2023/11/13 01:40:02 by mbabayan         ###   ########.fr       */
+/*   Created: 2023/11/20 14:04:46 by mbabayan          #+#    #+#             */
+/*   Updated: 2023/11/20 14:04:49 by mbabayan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * Calling write function with file descriptor,
+ * function that takes as a parameter an element and frees the memory of the
+ * elements content using the function ’del’ given as a parameter and free
  */
-void ft_putchar_fd(char c, int fd)
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	write(fd, &c, 1);
+	if (!lst)
+		return ;
+	del(lst -> content);
+	free(lst);
 }

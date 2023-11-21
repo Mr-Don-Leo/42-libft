@@ -12,9 +12,10 @@
 
 #include "libft.h"
 
-// Calling write function with file descriptor, 
-// string pointer, and string length
-
+/*
+ * Calling write function with file descriptor,
+ * string pointer, and string length
+ */
 void	ft_putstr_fd(char *s, int fd)
 {
 	write(fd, s, ft_strlen(s));

@@ -1,21 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbabayan <mbabayan@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 22:31:18 by mbabayan          #+#    #+#             */
-/*   Updated: 2023/11/13 01:40:02 by mbabayan         ###   ########.fr       */
+/*   Created: 2023/11/20 12:33:17 by mbabayan          #+#    #+#             */
+/*   Updated: 2023/11/20 12:33:25 by mbabayan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * Calling write function with file descriptor,
+ * Returns the last element of the list.
+ * If the list is empty, returns NULL.
+ * loop through the list until the last element is reached.
  */
-void ft_putchar_fd(char c, int fd)
+t_list	*ft_lstlast(t_list	*lst)
 {
-	write(fd, &c, 1);
+	if (!lst)
+		return (NULL);
+	while (lst -> next)
+		lst = lst -> next;
+	return (lst);
+
 }

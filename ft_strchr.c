@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/*
+ * function finds the first occurrence of c in the whole string.
+ */
 char	*ft_strchr(const char *s, int c)
 {
 	while ((char)c != *s)

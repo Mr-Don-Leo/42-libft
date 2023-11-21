@@ -11,11 +11,9 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-Code loops through a string of characters, for each character it
-increments index, at the end once the loop reaches Null it returns index
-*/
 
+// Code loops through a string of characters, for each character it
+// increments index, at the end once the loop reaches Null it returns index
 int ft_strlen(const char *str)
 {
     size_t index;

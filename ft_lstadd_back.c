@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbabayan <mbabayan@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 22:31:18 by mbabayan          #+#    #+#             */
-/*   Updated: 2023/11/13 01:40:02 by mbabayan         ###   ########.fr       */
+/*   Created: 2023/11/20 13:36:41 by mbabayan          #+#    #+#             */
+/*   Updated: 2023/11/20 13:36:48 by mbabayan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * Calling write function with file descriptor,
+ * Adds the element ’new’ at the end of the list.
  */
-void ft_putchar_fd(char c, int fd)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	write(fd, &c, 1);
+	if (!lst || !new)
+		return ;
+	if (*lst)
+		ft_lstlast(*lst) -> next = new;
+	else
+		*lst = new;
 }

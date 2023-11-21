@@ -1,21 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbabayan <mbabayan@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 22:31:18 by mbabayan          #+#    #+#             */
-/*   Updated: 2023/11/13 01:40:02 by mbabayan         ###   ########.fr       */
+/*   Created: 2023/11/19 12:41:24 by mbabayan          #+#    #+#             */
+/*   Updated: 2023/11/19 12:41:27 by mbabayan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * Calling write function with file descriptor,
+ * function sets the 'next' pointer of the new element to point to the current
+ * first element of the 'lst', then updates lst pointer to the 'new' element.
  */
-void ft_putchar_fd(char c, int fd)
+void ft_lstadd_front(t_list **lst, t_list *new)
 {
-	write(fd, &c, 1);
+	new -> next = *lst;
+	*lst = new;
 }

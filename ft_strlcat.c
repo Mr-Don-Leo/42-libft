@@ -12,7 +12,10 @@
 
 #include "libft.h"
 
-// dstsize - dstlen - 1 is to check for available space
+/*
+ * ft_strlcat appends src to dst, overwriting the initial terminating null,
+ * and then adds a terminating null. The string in dst must be large enough
+ */
 size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
     size_t  dstlen;

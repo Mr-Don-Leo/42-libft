@@ -12,9 +12,10 @@
 
 #include "libft.h"
 
-// Display the string in the file descriptor
-// And Append a newline character
-
+/*
+ * putendl function calls putstr and putchar functions
+ * it outputs the string following a new line.
+ */
 void ft_putendl_fd(char *s, int fd)
 {
 	ft_putstr_fd(s, fd);

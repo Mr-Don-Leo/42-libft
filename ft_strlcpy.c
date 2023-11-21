@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// ft_strlcpy copies up to dstsize - 1 characters from the string src to dst.
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	index;
