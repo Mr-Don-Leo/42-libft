@@ -51,7 +51,7 @@ int	ft_atoi(const char *str)
 
 	index = 0;
 	sign = 1;
-	while ((str[index] >= 8 && str[index] <= 13) || str[index] == 32)
+	while ((str[index] >= 9 && str[index] <= 13) || str[index] == 32)
 		++index;
 	if (str[index] == 92)
 		return (0);

@@ -1,5 +1,5 @@
 # Compiler that will be used to compile
-CC = gcc
+CC = cc
 # Name of the library that will be created
 NAME = libft.a
 # These are the compiler flags that will be used
@@ -13,7 +13,7 @@ SRCS = ft_calloc.c ft_memset.c ft_memmove.c ft_isalnum.c ft_isdigit.c ft_isalpha
 		ft_strjoin.c ft_strtrim.c ft_striteri.c ft_strnstr.c ft_strmapi.c ft_itoa.c #ft_split.c\
 
 BON_SRC =  ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-		ft_lstdelone.c ft_lstclear.c #ft_lstiter.c ft_lstmap.c\
+		ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c\
 
 OBJ = $(SRCS:.c=.o)
 
