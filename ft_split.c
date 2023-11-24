@@ -12,29 +12,69 @@
 
 #include "libft.h"
 
-int word_count(char const *s, char c)
+static int	word_count(char const *string, char separator)
 {
-	int count;
-	int index;
+	int	index;
+	int	count;
+	int	letter_check;
 
-	count = 0;
 	index = 0;
-	while (s[index])
+	count = 0;
+	letter_check = 0;
+	while (string[index])
 	{
-		if (s[index] != c)
+		if (string[index] != separator)
+			letter_check++;
+		else if (string[index] == separator && letter_check != 0)
 		{
 			count++;
-			while (s[index] != c && s[index])
-				index++;
+			letter_check = 0;
+		}
+		if (string[index] != separator && string[index + 1] == '\0')
+			count++;
+		index++;
+	}
+	return (count);
+}
+
+static void	add_string_to_list(char **result, char const *string,
+		char separator)
+{
+	size_t	index;
+	size_t	letter_count;
+	size_t	word_count;
+
+	index = 0;
+	word_count = 0;
+	while (string[index] != '\0')
+	{
+		letter_count = 0;
+		while (string[index + letter_count] && string[index
+			+ letter_count] != separator)
+			letter_count++;
+		if (letter_count > 0)
+		{
+			result[word_count] = ft_substr(string, index, letter_count);
+			word_count++;
+			index += letter_count;
 		}
 		else
 			index++;
 	}
+	result[word_count] = NULL;
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	size_t index;
+	int count;
+	char **result;
 
-
+	if (!s)
+		return (NULL);
+	count = word_count(s, c);
+	result = (char **)malloc(sizeof(char *) * (count + 1));
+	if (!result)
+		return (NULL);
+	add_string_to_list(result, s, c);
+	return (result);
 }
