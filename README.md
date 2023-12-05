@@ -17,7 +17,7 @@
 * [Getting Started](#getting-started)
   * [Installation](#installation)
   * [Usage](#usage)
-* [Functions](#functions-and-what-they-do)
+* [Functions](#little-overview-of-some-functions-and-what-they-do)
 
 ## About The Project
 
@@ -39,9 +39,37 @@ git clone https://github.com/Mr-Don-Leo/42-libft.git
 
 Firstly, you change the directory into the libft file you closed. Then you run make: 
 ```sh
-cd libft
+cd 42-libft
 make
 ```
-Running this command will compile the libft library, generating a libft.a file. Subsequently, you can link this library to your C project files during compilation using either gcc or cc.
+Running this command will compile the libft library, generating a libft.a file. After that, you can link this library to your C project files during compilation using gcc or cc.
 
-## Functions and what they do
+## Little overview of some functions and what they do
+
+### ft_split 
+
+ft_split takes a string and a character as its parameter, the character being used as a separator. It then separates the string takes whatever is between each character/separator, and stores each new string/word in an array of strings. 
+
+### ft_itoa
+
+ft_itoa converts an integer datatype value to ASCII character datatype. (string)
+
+### ft_atoi
+
+ft_atoi converts ASCII character (digits: 48 -> 57 DEC) to integer datatype values.
+
+### ft_lstnew
+
+ft_lstnew creates a new list element of type t_list, which is declared in libft.h.
+
+### ft_isprint
+
+ft_isprint checks if the character is a printable character, returns true or false. (1 || 0)
+
+### ft_strchr
+
+ft_strchr takes a string as a parameter, as well as a character. Then it finds the first occurrence of the character within the string. 
+
+### ft_strdup
+
+ft_strdup duplicates a string by first allocating sufficient memory for it then copying the string into the allocated memory.
