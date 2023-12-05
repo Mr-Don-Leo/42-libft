@@ -50,7 +50,7 @@ void				ft_putchar_fd(char c, int fd);
 /*
  * String Operations
  */
-int					ft_strlen(const char *s);
+size_t 				ft_strlen(const char *s);
 int					ft_atoi(const char *str);
 size_t				ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
