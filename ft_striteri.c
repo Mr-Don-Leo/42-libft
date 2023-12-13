@@ -15,7 +15,7 @@
 // ft_striteri applies the function 'f' to each character of the string 's'
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	int	index;
+	size_t	index;
 
 	index = 0;
 	if (!s)
